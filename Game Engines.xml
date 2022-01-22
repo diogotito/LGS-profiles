@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <profiles xmlns="http://www.logitech.com/Cassandra/2010.7/Profile">
-  <profile gpasupported="0" gkeysdk="0" lock="0" lastplayeddate="2022-01-21T17:52:08" name="Sumatra" gameid="" launchable="1" guid="{B9D7E59B-2181-498C-A563-88BFB0DD082C}">
-    <description>Atalhos de navegação em PDFs</description>
-    <target path="C:\PROGRAM FILES\SUMATRAPDF\SUMATRAPDF.EXE"/>
+  <profile gpasupported="0" gkeysdk="0" lock="1" lastplayeddate="2022-01-22T17:16:02" name="Game Engines" gameid="" launchable="1" guid="{F6C262AB-8FD1-49FF-936C-F3D69889AD5E}">
+    <description>Defold, Godot, Unity, etc.</description>
+    <target path="C:\tools\Defold\Defold.exe"/>
+    <target path="C:\PROGRAMDATA\CHOCOLATEY\BIN\GODOT.EXE"/>
+    <target path="C:\TOOLS\GODOT\GODOT_V3.3-STABLE_WIN64.EXE"/>
+    <target path="C:\TOOLS\UNITY\2020.3.20F1\EDITOR\UNITY.EXE"/>
     <signature value="" key="" name="" executable=""/>
     <macros>
       <macro color="4278246655" original="true" hidden="false" name="Clique esquerdo" guid="{5DAFA657-7E0B-4D37-9F7A-FA252ED551E6}">
@@ -111,65 +114,27 @@
           <do task="scrollleft"/>
         </mousefunction>
       </macro>
-      <macro color="4278246655" hidden="false" name="Page Up" guid="{DB3CD2B8-0A12-4D04-AC71-9C54F0267A39}">
-        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
-          <key value="PAGEUP"/>
-        </keystroke>
-      </macro>
-      <macro color="4278246655" hidden="false" name="Page Down" guid="{D63D2571-CE00-4C09-9A4C-584930D62F80}">
-        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
-          <key value="PAGEDOWN"/>
-        </keystroke>
-      </macro>
-      <macro color="4278246655" hidden="false" name="Minimizar janela" backupguid="{74F8ABD4-1630-44BF-9A8E-F868A100139B}" guid="{66929514-13E1-404C-BE0E-2065D8C231B2}">
+      <macro color="4278246655" original="true" hidden="false" name="Minimizar janela" guid="{74F8ABD4-1630-44BF-9A8E-F868A100139B}">
         <hotkeys xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Hotkeys">
           <do task="minwindow"/>
         </hotkeys>
       </macro>
-      <macro color="4278246655" hidden="false" name="&lt;C-W> Fechar separador" guid="{E7C20391-FB64-42B6-B8AC-75A0A043665B}">
+      <macro color="4278246655" hidden="false" name="* right tab" guid="{2877999A-81EE-4493-B5C8-47B0A4B81CED}">
         <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
-          <key value="W"/>
+          <key value="TAB"/>
           <modifier value="LCTRL"/>
         </keystroke>
       </macro>
-      <macro color="4278246655" hidden="false" name="[P] Página anterior" guid="{252C5058-F428-40CD-926E-EF63A5D5CC93}">
-        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
-          <key value="P"/>
-        </keystroke>
-      </macro>
-      <macro color="4278246655" hidden="false" name="[N] Página seguinte" guid="{C0944D72-2E1F-4E54-8CF3-A9152F16C1FB}">
-        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
-          <key value="N"/>
-        </keystroke>
-      </macro>
-      <macro color="4278246655" hidden="false" name="&lt;C-S-Tab> Separador esq" guid="{90462B67-84A8-4D86-9964-3851A7D3A469}">
+      <macro color="4278246655" hidden="false" name="* left tab" guid="{EEC45C0D-5565-428D-81D3-2A3CFBEB50A5}">
         <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
           <key value="TAB"/>
           <modifier value="LSHIFT"/>
           <modifier value="LCTRL"/>
         </keystroke>
       </macro>
-      <macro color="4278246655" hidden="false" name="&lt;C-Tab> Separador dir" guid="{66D83D98-DAF2-4754-A4E9-3D677AB42119}">
+      <macro color="4278246655" hidden="false" name="* close tab" guid="{D84F9AA1-C3E4-48A7-BFDF-BC5B9FD7954E}">
         <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
-          <key value="TAB"/>
-          <modifier value="LCTRL"/>
-        </keystroke>
-      </macro>
-      <macro color="4278246655" hidden="false" name=" * 1 pagina" guid="{2B360B25-21FB-4FA8-B3DC-FC118A9549D1}">
-        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
-          <key value="6"/>
-          <modifier value="LCTRL"/>
-        </keystroke>
-      </macro>
-      <macro color="4278246655" hidden="false" name=" * 2 paginas" guid="{5E99FA80-267A-41C8-BBAB-22E255EF23AA}">
-        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
-          <key value="8"/>
-          <modifier value="LCTRL"/>
-        </keystroke>
-      </macro>
-      <macro color="4278246655" hidden="false" name="&lt;C-D> Document Properties" guid="{F340FD48-BD1E-48C8-9150-784F1767DE0A}">
-        <keystroke xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/Keystroke">
-          <key value="D"/>
+          <key value="W"/>
           <modifier value="LCTRL"/>
         </keystroke>
       </macro>
@@ -218,6 +183,8 @@
       <assignment original="true" contextid="Button3" shiftstate="1" macroguid="{8B615B23-6FDC-4430-9E57-E5CCBCAC4575}" backup="false"/>
       <assignment original="true" contextid="Button4" shiftstate="1" macroguid="{A0D817F6-1D5D-483B-ADD0-2634CD93D42A}" backup="false"/>
       <assignment original="true" contextid="Button5" shiftstate="1" macroguid="{8B13562D-60F2-460F-9588-8C84168C81BC}" backup="false"/>
+      <assignment original="true" contextid="Button7" shiftstate="1" macroguid="{12C9716B-4D7A-4F6F-AF20-A0369219119A}" backup="false"/>
+      <assignment original="true" contextid="Button8" shiftstate="1" macroguid="{68A1C0B2-2996-4992-9CC5-3285AC8E9740}" backup="false"/>
       <assignment original="true" contextid="Button1" shiftstate="4" macroguid="{5DAFA657-7E0B-4D37-9F7A-FA252ED551E6}" backup="false"/>
       <assignment original="true" contextid="Button2" shiftstate="4" macroguid="{9D0F4485-F6CE-49AF-B3FB-328DBF996F1E}" backup="false"/>
       <assignment original="true" contextid="Button3" shiftstate="4" macroguid="{8B615B23-6FDC-4430-9E57-E5CCBCAC4575}" backup="false"/>
@@ -228,15 +195,11 @@
       <assignment original="true" contextid="Button8" shiftstate="4" macroguid="{68A1C0B2-2996-4992-9CC5-3285AC8E9740}" backup="false"/>
       <assignment original="true" contextid="Button10" shiftstate="4" macroguid="{EE49A474-3A50-4891-B072-A363B7179C34}" backup="false"/>
       <assignment original="true" contextid="Button11" shiftstate="4" macroguid="{7D16D855-DD60-4578-A5F3-DFED772DE25E}" backup="false"/>
-      <assignment original="false" contextid="Button8" shiftstate="1" macroguid="{68A1C0B2-2996-4992-9CC5-3285AC8E9740}" backup="true"/>
-      <assignment original="false" contextid="Button7" shiftstate="1" macroguid="{12C9716B-4D7A-4F6F-AF20-A0369219119A}" backup="true"/>
-      <assignment original="false" contextid="Button6" shiftstate="1" macroguid="{A1FEC5BC-9A8A-49C5-B085-0E2EDCEF1F55}" backup="true"/>
-      <assignment original="false" contextid="Button6" shiftstate="1" macroguid="{8B615B23-6FDC-4430-9E57-E5CCBCAC4575}" backup="false"/>
+      <assignment original="true" contextid="Button6" shiftstate="1" macroguid="{8B615B23-6FDC-4430-9E57-E5CCBCAC4575}" backup="false"/>
       <assignment original="false" contextid="Button11" shiftstate="1" macroguid="{7D16D855-DD60-4578-A5F3-DFED772DE25E}" backup="true"/>
-      <assignment original="false" contextid="Button7" shiftstate="1" macroguid="{C0944D72-2E1F-4E54-8CF3-A9152F16C1FB}" backup="false"/>
-      <assignment original="false" contextid="Button8" shiftstate="1" macroguid="{252C5058-F428-40CD-926E-EF63A5D5CC93}" backup="false"/>
+      <assignment original="false" contextid="Button11" shiftstate="1" macroguid="{EEC45C0D-5565-428D-81D3-2A3CFBEB50A5}" backup="false"/>
       <assignment original="false" contextid="Button10" shiftstate="1" macroguid="{EE49A474-3A50-4891-B072-A363B7179C34}" backup="true"/>
-      <assignment original="false" contextid="Button9" shiftstate="1" macroguid="{F340FD48-BD1E-48C8-9150-784F1767DE0A}" backup="false"/>
+      <assignment original="false" contextid="Button10" shiftstate="1" macroguid="{2877999A-81EE-4493-B5C8-47B0A4B81CED}" backup="false"/>
     </assignments>
     <assignments devicecategory="Logitech.Gaming.Mouse.G300">
       <assignment original="true" contextid="Button1" shiftstate="1" macroguid="{5DAFA657-7E0B-4D37-9F7A-FA252ED551E6}" backup="false"/>
@@ -324,27 +287,18 @@
       <mode color="#0000ff" shiftstate="3"/>
     </backlight>
     <script>--[[
-A única coisa que sinto falta no G-Hub é a funcionalidade de G-Shift para duplicar os meus atalhos.
+A única coisa que sinto falta no G-Hub é a funcionalidade de G-Shift para ter mais atalhos.
 Vou tentar replicar essa funcionalidade aqui neste script
---]]
+]]
 
-MEU_G_SHIFT = 6
-g_shift_ligado = false
+MEU_G_SHIFT = 6            -- N.º do botão com o ícone da mira que fica à frente do polegar
+g_shift_ligado = false     -- Memoriza se este botão foi premido (true) ou largado (false)
 
 function OnEvent(event, arg)
+	-- Mostra o que está no event e no arg numa linha no painel de Output abaixo
+	-- Quando event é "MOUSE_BUTTON_PRESSED" ou "MOUSE_BUTTON_RELEASED",
+	-- arg é o n.º do botão do rato premido ou largado
 	OutputLogMessage("event = %s, arg = %s\n", event, arg);
-
-	--[[
-		Ok, mais uma coisa que por acaso o G-Hub tinha e o LGS não!
-		Lá, nas macros, dava para programar ações para quando o botão associado à macro era
-		premido, se mantinha premido e era largado.
-		Agora quero carregar Esc quando o meu botão para “autoscroll” é largado
-		para o Sumatra não continuar a scrollar
-		(por acaso podia dar merge desta lógica com a do G-Shift)
-	]]
-	if event == "MOUSE_BUTTON_RELEASED" and arg == 6 then
-		PressAndReleaseKey("escape")
-	end
 	
 	-- Ligar/Desligar G-Shift
 	if arg == MEU_G_SHIFT then
@@ -357,24 +311,10 @@ function OnEvent(event, arg)
 		end
 	end
 	
-	if event == "MOUSE_BUTTON_PRESSED" then
-		if g_shift_ligado then
-			OutputLogMessage("\n >>>  ON  &lt;&lt;&lt;\n\n")
-			if arg == 11 or arg == 8 then
-				OutputLogMessage	(" * 1 página")
-				PlayMacro(" * 1 pagina")
-			end
-			if arg == 10 or arg == 7 then
-				PlayMacro(" * 2 paginas")
-			end
-		else
-			OutputLogMessage("LARGADO")
-			if arg == 11 then
-				PlayMacro("&lt;C-S-Tab> Separador esq")
-			end
-			if arg == 10 then
-				PlayMacro("&lt;C-Tab> Separador dir")
-			end
+	if g_shift_ligado and event == "MOUSE_BUTTON_PRESSED" then
+		if arg == 3 then
+			OutputLogMessage "  * Fechar Separador [Ctrl + W]\n"
+			PlayMacro("* close tab")
 		end
 	end
 end</script>
