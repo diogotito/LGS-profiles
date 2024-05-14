@@ -3,5 +3,3 @@ mouse.maps {
   [AIM + SCROLL_RIGHT] = '^#right',
   [PROFILE_SWITCH]     = 'printscreen',
 }
-
-mouse.dbg()

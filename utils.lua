@@ -1,12 +1,5 @@
-local function mask(keys)
-  local sum = 0
-  for i = 1, #keys do
-    sum = sum + 2 ^ keys[i]
-  end
-  return sum
-end
-
 local function perform_shortcut(...)
+  debug("* Performing shortcut: <%s>\n", table.concat({...}, "-"))
 	mods = {...}
 	key = table.remove(mods)
 	PressKey(unpack(mods))
@@ -38,12 +31,11 @@ local function ahk(ahk_code)
       tokens[#tokens + 1] = KEYS[ahk_code:sub(from, to)]
     end
     start = to + 1
-  until start >= ahk_code:len()
+  until start > ahk_code:len()
   return unpack(tokens)
 end
 
 return {
-  mask = mask,
   perform_shortcut = perform_shortcut,
   shortcut = shortcut,
   ahk = ahk

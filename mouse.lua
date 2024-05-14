@@ -6,6 +6,7 @@ local mouse = {
     FORWARD = 5,
     AIM = 6,
     INDEX_DOWN = 7,
+    INDEX_UP = 8,
     PROFILE_SWITCH = 9,
     INDEX_UP = 8,
     SCROLL_RIGHT = 10,
@@ -13,9 +14,7 @@ local mouse = {
   },
 }
 
-for k, v in pairs(mouse.button) do
-  _G[k] = 2 ^ v
-end
+
 
 local _state = 0
 function mouse.on_pressed(button)  _state = _state + 2 ^ button; end
@@ -23,15 +22,12 @@ function mouse.on_released(button) _state = _state - 2 ^ button; end
 
 local _bindings = {}
 
--- DSL 1
-function mouse.map(mbtns) return function(ahk_hotkey)
-  _bindings[_.mask(mbtns)] = _.shortcut(_.ahk(ahk_hotkey))
-end; end
-
 -- DSL 2
 function mouse.maps(maps_tbl)
   for lhs, rhs in pairs(maps_tbl) do
-    _bindings[lhs] = _.shortcut(_.ahk(ahk_hotkey))
+    if type(rhs) == 'string' then rhs = _.shortcut(_.ahk(rhs))  end
+    if type(rhs) == 'table'  then rhs = _.shortcut(unpack(rhs)) end
+    _bindings[lhs] = rhs
   end
 end
 
@@ -43,6 +39,7 @@ function mouse.trigger_bindings()
 end
 
 function mouse.dbg()
+  load_module 'pprint' .defaults.show_all = true
   pprint(mouse, _state, _bindings)
 end
 
