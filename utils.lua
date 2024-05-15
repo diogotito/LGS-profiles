@@ -1,15 +1,15 @@
 local function perform_shortcut(...)
-  debug("* Performing shortcut: <%s>\n", table.concat({...}, "-"))
-	mods = {...}
-	key = table.remove(mods)
-	PressKey(unpack(mods))
-	PressAndReleaseKey(key)
-	ReleaseKey(unpack(mods))
+  debug("* Performing shortcut: <%s>\n", table.concat({ ... }, "-"))
+  mods = { ... }
+  key = table.remove(mods)
+  PressKey(unpack(mods))
+  PressAndReleaseKey(key)
+  ReleaseKey(unpack(mods))
 end
 
 local function shortcut(...)
-	local keys = {...}
-	return function() return perform_shortcut(unpack(keys)) end
+  local keys = { ... }
+  return function() return perform_shortcut(unpack(keys)) end
 end
 
 local function ahk(ahk_code)
@@ -20,7 +20,8 @@ local function ahk(ahk_code)
     ['+'] = 'lshift',
   }
   local tokens = {}
-  local start = 1, from, to
+  local start = 1
+  local from, to
   repeat
     -- If Lua regexps supported disjunction this could be made in 2 or 3 lines
     from, to = ahk_code:find('^[^+!#^]+', start)
