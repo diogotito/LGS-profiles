@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<profiles xmlns="http://www.logitech.com/Cassandra/2010.7/Profile">
+  <profile name="Sid Meier's Civilization VI (DX12)" gpasupported="1" gameid="com.firaxis.CivTech" guid="{8745C59E-D701-48DE-9E79-3BC2056DF5B1}" launchable="1" gkeysdk="0" lock="0" lastplayeddate="2023-01-29T20:56:53">
+    <description></description>
+    <target path="C:\TOOLS\PORTABLE EPICGAMES\SIDMEIERSCIVILIZATIONVI\BASE\BINARIES\WIN64EOS\CIVILIZATIONVI_DX12.EXE"/>
+    <target path="C:\TOOLS\PORTABLE EPICGAMES\SIDMEIERSCIVILIZATIONVI\BASE\BINARIES\WIN64EOS\CIVILIZATIONVI.EXE"/>
+    <signature name="" executable="" key="" value=""/>
+    <macros>
+      <macro name="Clique esquerdo" hidden="false" guid="{5DAFA657-7E0B-4D37-9F7A-FA252ED551E6}" color="4278246655">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="leftclick"/>
+        </mousefunction>
+      </macro>
+      <macro name="Clique direito" hidden="false" guid="{9D0F4485-F6CE-49AF-B3FB-328DBF996F1E}" color="4278246655">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="rightclick"/>
+        </mousefunction>
+      </macro>
+      <macro name="Clique intermédio" hidden="false" guid="{8B615B23-6FDC-4430-9E57-E5CCBCAC4575}" color="4278246655">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="middleclick"/>
+        </mousefunction>
+      </macro>
+      <macro name="Retroceder" hidden="false" guid="{A0D817F6-1D5D-483B-ADD0-2634CD93D42A}" color="4278246655">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="back"/>
+        </mousefunction>
+      </macro>
+      <macro name="Para frente" hidden="false" guid="{8B13562D-60F2-460F-9588-8C84168C81BC}" color="4278246655">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="forward"/>
+        </mousefunction>
+      </macro>
+      <macro name="Diminuir PPP" hidden="false" guid="{12C9716B-4D7A-4F6F-AF20-A0369219119A}" devicecategory="Logitech.Gaming.Mouse" color="4278246655">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="dpidown"/>
+        </mousefunction>
+      </macro>
+      <macro name="Aumentar PPP" hidden="false" guid="{68A1C0B2-2996-4992-9CC5-3285AC8E9740}" devicecategory="Logitech.Gaming.Mouse" color="4278246655">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="dpiup"/>
+        </mousefunction>
+      </macro>
+      <macro name="Deslocar para a direita" hidden="false" guid="{EE49A474-3A50-4891-B072-A363B7179C34}" color="4278246655">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="scrollright"/>
+        </mousefunction>
+      </macro>
+      <macro name="Deslocar para a esquerda" hidden="false" guid="{7D16D855-DD60-4578-A5F3-DFED772DE25E}" color="4278246655">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="scrollleft"/>
+        </mousefunction>
+      </macro>
+      <macro name="Mudança de PPP" hidden="false" guid="{A1FEC5BC-9A8A-49C5-B085-0E2EDCEF1F55}" devicecategory="Logitech.Gaming.Mouse" color="4278246655">
+        <mousefunction xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MouseFunction">
+          <do task="dpishift"/>
+        </mousefunction>
+      </macro>
+      <macro name="* RIGHT DESKTOP" hidden="false" guid="{E32BC089-8B38-4F96-8B83-A64B5B67C89D}" color="4278246655">
+        <multikey xmlns="http://www.logitech.com/Cassandra/2010.1/Macros/MultiKey">
+          <key direction="down" value="LCTRL"/>
+          <key direction="down" value="LGUI"/>
+          <key direction="down" value="RIGHT"/>
+          <key direction="up" value="RIGHT"/>
+          <key direction="up" value="LGUI"/>
+          <key direction="up" value="LCTRL"/>
+        </multikey>
+      </macro>
+    </macros>
+    <assignments devicecategory="Logitech.Gaming.Mouse.C08B">
+      <assignment contextid="Button1" macroguid="{5DAFA657-7E0B-4D37-9F7A-FA252ED551E6}" shiftstate="1" backup="false" original="false"/>
+      <assignment contextid="Button2" macroguid="{9D0F4485-F6CE-49AF-B3FB-328DBF996F1E}" shiftstate="1" backup="false" original="false"/>
+      <assignment contextid="Button3" macroguid="{8B615B23-6FDC-4430-9E57-E5CCBCAC4575}" shiftstate="1" backup="false" original="false"/>
+      <assignment contextid="Button4" macroguid="{A0D817F6-1D5D-483B-ADD0-2634CD93D42A}" shiftstate="1" backup="false" original="false"/>
+      <assignment contextid="Button5" macroguid="{8B13562D-60F2-460F-9588-8C84168C81BC}" shiftstate="1" backup="false" original="false"/>
+      <assignment contextid="Button7" macroguid="{12C9716B-4D7A-4F6F-AF20-A0369219119A}" shiftstate="1" backup="false" original="false"/>
+      <assignment contextid="Button8" macroguid="{68A1C0B2-2996-4992-9CC5-3285AC8E9740}" shiftstate="1" backup="false" original="false"/>
+      <assignment contextid="Button10" macroguid="{EE49A474-3A50-4891-B072-A363B7179C34}" shiftstate="1" backup="false" original="false"/>
+      <assignment contextid="Button11" macroguid="{7D16D855-DD60-4578-A5F3-DFED772DE25E}" shiftstate="1" backup="false" original="false"/>
+      <assignment contextid="Button1" macroguid="{5DAFA657-7E0B-4D37-9F7A-FA252ED551E6}" shiftstate="4" backup="false" original="false"/>
+      <assignment contextid="Button2" macroguid="{9D0F4485-F6CE-49AF-B3FB-328DBF996F1E}" shiftstate="4" backup="false" original="false"/>
+      <assignment contextid="Button3" macroguid="{8B615B23-6FDC-4430-9E57-E5CCBCAC4575}" shiftstate="4" backup="false" original="false"/>
+      <assignment contextid="Button4" macroguid="{A0D817F6-1D5D-483B-ADD0-2634CD93D42A}" shiftstate="4" backup="false" original="false"/>
+      <assignment contextid="Button5" macroguid="{8B13562D-60F2-460F-9588-8C84168C81BC}" shiftstate="4" backup="false" original="false"/>
+      <assignment contextid="Button6" macroguid="{A1FEC5BC-9A8A-49C5-B085-0E2EDCEF1F55}" shiftstate="4" backup="false" original="false"/>
+      <assignment contextid="Button7" macroguid="{12C9716B-4D7A-4F6F-AF20-A0369219119A}" shiftstate="4" backup="false" original="false"/>
+      <assignment contextid="Button8" macroguid="{68A1C0B2-2996-4992-9CC5-3285AC8E9740}" shiftstate="4" backup="false" original="false"/>
+      <assignment contextid="Button10" macroguid="{EE49A474-3A50-4891-B072-A363B7179C34}" shiftstate="4" backup="false" original="false"/>
+      <assignment contextid="Button11" macroguid="{7D16D855-DD60-4578-A5F3-DFED772DE25E}" shiftstate="4" backup="false" original="false"/>
+      <assignment contextid="Button6" macroguid="{8B615B23-6FDC-4430-9E57-E5CCBCAC4575}" shiftstate="1" backup="false" original="false"/>
+      <assignment contextid="Button9" macroguid="{E32BC089-8B38-4F96-8B83-A64B5B67C89D}" shiftstate="1" backup="false" original="false"/>
+    </assignments>
+    <pointers>
+      <pointer devicemodel="Logitech.Gaming.Mouse.C08B">
+        <mode shiftstate="1">
+          <reportrate rate="1000"/>
+          <powermode value="2"/>
+          <dpitable syncxy="1" defaultindex="1" shiftindex="0">
+            <dpi enabled="1" x="1200" y="1200"/>
+            <dpi enabled="1" x="2400" y="2400"/>
+            <dpi enabled="1" x="3200" y="3200"/>
+            <dpi enabled="1" x="6400" y="6400"/>
+          </dpitable>
+          <movement acceleration="0" speed="-1"/>
+        </mode>
+      </pointer>
+    </pointers>
+    <script>function OnEvent(event, arg)
+    OutputLogMessage("event = %s, arg = %s\n", event, arg)
+end</script>
+  </profile>
+</profiles>
