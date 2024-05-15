@@ -1,12 +1,14 @@
 -- Profile customization system
 local profile_customization_env = {}
 for k, v in pairs(mouse.button) do
-  _G[k] = 2 ^ v
+  profile_customization_env[k] = 2 ^ v
 end
 setmetatable(profile_customization_env, { __index = getfenv() })
 
 function setup_profile(name)
-  local chunk = loadfile(("%s/profiles/%s.lua"):format(BASE, name))
+  local path = ("%s/profiles/%s.lua"):format(BASE, name)
+  local chunk = assert(loadfile(path), ("[[%s]] doesn't exist!"):format(path))
+  
   setfenv(chunk, profile_customization_env)
   return chunk()
 end

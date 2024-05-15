@@ -22,6 +22,7 @@ local function ahk(ahk_code)
   local tokens = {}
   local start = 1, from, to
   repeat
+    -- If Lua regexps supported disjunction this could be made in 2 or 3 lines
     from, to = ahk_code:find('^[^+!#^]+', start)
     if from then
       tokens[#tokens + 1] = ahk_code:sub(from, to)
