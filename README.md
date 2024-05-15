@@ -10,5 +10,3 @@ So I did.
 
 Then I wanted to have my LGS config and Lua scripts backed up,
 so I exported the Profiles I created and pushed them here.
-
-* [ ] add exported profiles here
