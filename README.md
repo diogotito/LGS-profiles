@@ -10,7 +10,7 @@ A small Lua framework to bind arbitrary "mouse chords" to keyboard shortcuts wit
 
    ```lua
    -- Optional settings:
-   DBG = false -- true to more see detailed output
+   DBG = false -- true to see more detailed output
    PROFILE = [[profile_name]] -- Allows custom configuration in profiles\profile_name.lua
 
    -- Required:
@@ -18,7 +18,7 @@ A small Lua framework to bind arbitrary "mouse chords" to keyboard shortcuts wit
    dofile(BASE .. [[\index.lua]])
    ```
 
-3. Customize the global mouse chrods in profiles/base.lua:
+3. Customize the global mouse chords in profiles/base.lua:
 
    ```lua
    mouse.maps {
@@ -68,8 +68,16 @@ Sums (`+`) of these names go to the keys in the table passed to `mouse.maps`, wr
   [AIM + RIGHT] -- when the G6 button and right mouse button are both pressed
 ```
 
-The values are keyboard shortcut strings, which use a notation similar to
-[AutoHotKey](https://www.autohotkey.com/docs/v2/Hotkeys.htm#Symbols):
+The values are keyboard shortcut strings, which use a notation slightly inspired by
+[AutoHotKey](https://www.autohotkey.com/docs/v2/lib/Send.htm) (minus the braces):
+
+<table align="center">
+  <tr>
+    <th>Modifier prefixes</th>
+    <th>Key codes</th>
+  </tr>
+  <tr>
+    <td>
 
 |     Symbol     | Key              |
 | :------------: | :--------------- |
@@ -78,29 +86,28 @@ The values are keyboard shortcut strings, which use a notation similar to
 | <code>!</code> | <kbd>Alt</kbd>   |
 | <code>+</code> | <kbd>Shift</kbd> |
 
-For the remaining names usable in keyboard shortcuts,
-refer to Appendix A in your G-seriesLuaAPI.pdf,
-accessible through Help > Script API from the Script editor window in LGS.
+  </td>
+    <td>
 
-Some of the key names that you can use in keyboard shorcuts:  
-`a` to `z`,
-`1` to `9` and `0`,
-`f1` to `f24`,
-`appkey`,
+Some key names that you can use in keyboard shorcuts around the modifiers are as follows:
+
+- `a` to `z`
+- `1` to `9` and `0`
+- `f1` to `f24`
+- `left`, `right`, `up` and `down`
+- `appkey`,
 `backslash`,
 `backspace`,
 `lbracket` and `rbracket`,
 `capslock`,
 `comma`,
 `delete`,
-`down`,
 `end`,
 `enter`,
 `equal`,
 `escape`,
 `home`,
 `insert`,
-`left`,
 `minus`,
 `numlock`,
 `pagedown`,
@@ -109,19 +116,27 @@ Some of the key names that you can use in keyboard shorcuts:
 `period`,
 `printscreen`,
 `quote`,
-`right`,
 `scrolllock`,
 `semicolon`,
 `slash`,
 `spacebar`,
 `tab`,
-`tilde`,
-`up`
+`tilde`...
 
-Example shortcut:
+  </td>
+  </tr>
+
+</table>
+
+For the complete list of usable names names in keyboard shortcuts,
+refer to **Appendix A** in your _G-seriesLuaAPI.pdf_,
+accessible through _Help > Script API_ from the Script editor window in LGS.
+
+Example shortcuts:
 
 ```lua
-  "^tab" -- Hold [Ctrl] key and press [Tab]
+  "!d" -- Hold [Alt] key and press [d]
+  "escape^w" -- Hold [Esc] and [Ctrl] and press [w]
 ```
 
 These shortcut keys are passed to `utils.ahk(string)`,
@@ -144,7 +159,7 @@ AHK `Send`-style string:
 - Write a custom Lua function that gets called when the mouse chord is activated
 
   ```lua
-  function ()
+  function()
     _.perform_shortcut("lctrl", "tab")
   end
   ```
@@ -152,6 +167,5 @@ AHK `Send`-style string:
   Utility functions should be available for working with closures for a more "points free" style (WIP)
 
   ```lua
-  shortcut("lctrl", "tab")
-    --> a closure that calls _.perform_shortcut("lctrl", "tab")
+  shortcut("lctrl", "tab") --> a closure that calls _.perform_shortcut("lctrl", "tab")
   ```
