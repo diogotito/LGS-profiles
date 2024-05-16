@@ -73,11 +73,9 @@ The values are keyboard shortcut strings, which use a notation slightly inspired
 
 <table align="center">
   <tr>
-    <th>Modifier prefixes</th>
-    <th>Key codes</th>
-  </tr>
-  <tr>
     <td>
+
+#### Modifier keys
 
 |     Symbol     | Key              |
 | :------------: | :--------------- |
@@ -86,10 +84,12 @@ The values are keyboard shortcut strings, which use a notation slightly inspired
 | <code>!</code> | <kbd>Alt</kbd>   |
 | <code>+</code> | <kbd>Shift</kbd> |
 
+These can appear anywhere in the shortcut string
+
   </td>
     <td>
 
-Some key names that you can use in keyboard shorcuts around the modifiers are as follows:
+##### Other key names
 
 - `a` to `z`
 - `1` to `9` and `0`
