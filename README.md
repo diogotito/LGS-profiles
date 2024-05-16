@@ -132,15 +132,15 @@ For the complete list of usable names names in keyboard shortcuts,
 refer to **Appendix A** in your _G-seriesLuaAPI.pdf_,
 accessible through _Help > Script API_ from the Script editor window in LGS.
 
-Example shortcuts:
+#### Example shortcuts
 
 ```lua
-  "!d" -- Hold [Alt] key and press [d]
+  "!d"       -- Hold [Alt] and press [d]
   "escape^w" -- Hold [Esc] and [Ctrl] and press [w]
 ```
 
 These shortcut keys are passed to `utils.ahk(string)`,
-which tokenizes it into a table of keycodes (actually strings),
+which tokenizes it into a table of key names,
 which is passed to `utils.shortcut(...)`
 which returns a closure that calls `utils.perform_shortcut(...)`,
 which finally calls
